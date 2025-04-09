@@ -1,3 +1,6 @@
+// git init
+//
+
 // function sayhello()
 // {
 //     let you = prompt("what is your name ?");
@@ -87,11 +90,97 @@
 // someFunction("hi","there!","How are you?");
 
 //Returning function values
-let addTwoNumbers = (x,y) => (x+y);
- let resultsArr =[];
+// let addTwoNumbers = (x,y) => (x+y);
+//  let resultsArr =[];
 
- for (let i=0; i<10; i++){
-    let result = addTwoNumbers(i , 2*i);
-    resultsArr.push(result);
- }
- console.log(resultsArr);
+//  for (let i=0; i<10; i++){
+//     let result = addTwoNumbers(i , 2*i);
+//     resultsArr.push(result);
+//  }
+//  console.log(resultsArr);
+
+// //returning with arrow function
+// let addTwoNumber = (x,y) => x+y;  //there is no need of return keyword.
+
+// let result=addTwoNumber(5,6);
+// console.log(result);
+
+//variable scope in function
+// function testAvailability(x){
+//    console.log("Available here:",x)
+// }
+// testAvailability("hii");
+// console.log("Not available here:",x);
+
+// function testAvailability(){
+//    let y="Local variable!";
+//    console.log("Available here:",y)
+// }
+// testAvailability();
+// console.log("Not available here:",y);
+
+// function testAvailability(){
+//    let y="I'll return";
+//    console.log("Available here:",y);
+//    return y;
+// }
+
+// let z=testAvailability();
+// console.log("Outside the function:",z);
+// console.log("Not available here:",y);
+
+// function doingStuff(){
+//    if(true){
+//       var x="local";
+//    }
+//    console.log(x);
+// }
+// doingStuff();
+
+// function doingStuff(){
+//    if(true){
+//       console.log(x);  //this give output as undefind
+//       var x="local";
+//    }
+// }
+// doingStuff();
+
+// function doingStuff(){
+//    if(true){
+//       console.log(x);   //this give output reference error
+//       let x="local";
+//    }
+// }
+// doingStuff();
+
+
+// function doingStuff(){
+//    if(true){
+//       console.log(x);   //this give output reference error
+//    }
+//    const x="local";
+// }
+// doingStuff();
+
+//global scope
+
+// let globalVar = "Accessible everywhere!";
+// console.log("Outside function:",globalVar);
+
+// function creatingNewScope(x){
+//    console.log("Access to global var inside function:",globalVar);
+// }
+
+// creatingNewScope("some parameter");
+// console.log("still available:",globalVar);
+
+
+// let x="global";
+
+// function doingStuff(){
+//    let x="local";
+//    console.log(x);
+
+// }
+// doingStuff();
+// console.log(x);
